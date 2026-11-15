@@ -46,7 +46,8 @@
         "url": "https://www.psychologicalscience.org/feed",
         "enabled": true,
         "category": "psychology",
-        "profile": "tech-news"
+        "profile": "tech-news",
+        "fetch_limit": 8
       },
       {
         "name": "Mind Hacks",
@@ -54,7 +55,8 @@
         "enabled": true,
         "category": "psychology",
         "profile": "tech-news",
-        "content_extractor": "trafilatura"
+        "content_extractor": "trafilatura",
+        "fetch_limit": 8
       },
       {
         "name": "Psyche (Aeon)",
@@ -62,7 +64,8 @@
         "enabled": true,
         "category": "psychology",
         "profile": "tech-news",
-        "content_extractor": "trafilatura"
+        "content_extractor": "trafilatura",
+        "fetch_limit": 6
       },
       {
         "name": "Nature Psychology",
@@ -70,7 +73,8 @@
         "enabled": true,
         "category": "psychology-research",
         "profile": "tech-news",
-        "content_extractor": "trafilatura"
+        "content_extractor": "trafilatura",
+        "fetch_limit": 12
       },
       {
         "name": "npj Science of Learning",
@@ -78,36 +82,41 @@
         "enabled": true,
         "category": "psychology-research",
         "profile": "tech-blog",
-        "content_extractor": "trafilatura"
+        "content_extractor": "trafilatura",
+        "fetch_limit": 6
       },
       {
         "name": "ScienceDaily Mind & Brain",
         "url": "https://www.sciencedaily.com/rss/mind_brain.xml",
         "enabled": true,
         "category": "psychology",
-        "profile": "tech-news"
+        "profile": "tech-news",
+        "fetch_limit": 10
       },
       {
         "name": "Biological Psychology (Elsevier)",
         "url": "https://rss.sciencedirect.com/publication/science/00016918",
         "enabled": true,
         "category": "psychology-research",
-        "profile": "tech-news"
+        "profile": "tech-news",
+        "fetch_limit": 8
       },
       {
         "name": "Aeon",
         "url": "https://aeon.co/feed.rss",
-        "enabled": true,
+        "enabled": false,
         "category": "psychology",
         "profile": "tech-blog",
-        "content_extractor": "trafilatura"
+        "content_extractor": "trafilatura",
+        "fetch_limit": 0
       },
       {
         "name": "Neuroanthropology",
         "url": "https://neuroanthropology.net/feed/",
-        "enabled": true,
+        "enabled": false,
         "category": "psychology-research",
-        "profile": "tech-news"
+        "profile": "tech-news",
+        "fetch_limit": 0
       }
     ],
     "reddit": {
