@@ -5,10 +5,28 @@ date: 2026-11-15
 lang: zh
 ---
 
-# 心理学前沿日报 - 2026-11-15
+> 从 39 条内容中筛选出 1 条重要资讯。
 
-## 心理学前沿 · 本批
+---
 
-1. [Aversive conditioning prevents perceptual habituation, but not cortical adaptation to odors](https://www.nature.com/articles/s41598-026-80377-5)
-2. [Self-motion perception influences postural sway more than environmental motion perception](https://www.nature.com/articles/s41598-026-80186-w)
-3. [Social jetlag, sleep duration and clinically significant fatigue among Chinese college students from health-related majors](https://www.nature.com/articles/s41598-026-79869-1)
+**科技新闻**
+1. [Ash 心理健康聊天机器人：五类参与模式及症状改善关联](#item-tech-news-1) ⭐️ 7.0/10
+
+---
+
+## 科技新闻
+
+<a id="item-tech-news-1"></a>
+### [Ash 心理健康聊天机器人：五类参与模式及症状改善关联](https://www.nature.com/articles/s41598-026-78802-w) ⭐️ 7.0/10
+
+一项发表于 Scientific Reports 的观察性研究对 102,684 名心理健康聊天机器人 Ash 用户做 K-means 聚类，基于 8 项行为特征识别出五种参与模式：早期退出者（52.2%）、Power Users（1.6%）、Intensive Users（4.1%）、每周用户（25.3%）和 Concentrated User（16.8%）；66.9% 的用户至少有一次 21 点至次日 5 点的夜间会话。完成基线和 3 周随访问卷的小样本中，PHQ-9 与 GAD-7 各 298 人、MSPSS 194 人，抑郁（d=-0.51）、焦虑（d=-0.57）和社会支持（d=0.22）均出现显著改善；11,437 人完成基线工作联盟量表，较高的工作联盟预测抑郁改善，并调节参与度与社会支持的关系。研究观察到抑郁改善存在剂量反应梯度，并在使用模型预测 PHQ-9 的更大样本（n=23,813）中复现：高参与的 Power 和 Intensive 用户改善最大（d=-0.57 和 -0.50），早期退出者最小（d=-0.22）。作者强调这是自然情境下的相关性证据，尚需对照设计确认，并提醒不应把会话次数当作主要参与度指标；部分作者是开发该模型公司的员工。
+
+rss · Nature Psychology · 11月15日 00:00
+
+**「背景概念」** 工作联盟指用户与聊天机器人在目标、任务和情感联结上的协作关系，常用 Working Alliance Inventory 衡量；该研究用它检验参与度与临床结局之间的关系。此前，对话式 AI 被看作可扩展的心理健康工具，但其真实世界参与模式和临床结局的关联缺乏大规模数据。
+
+**「实际影响」** 对开发者和评估者而言，这项研究提示仅按总会话数衡量参与度会掩盖不同使用轨迹：超过一半用户属于早期退出者，而高参与度用户的抑郁改善更大。因此产品评估应同时报告参与模式、工作联盟和临床结局，且不能把观察到的剂量反应直接当作因果效果。
+
+**标签**: `#AI mental health`, `#conversational AI`, `#user engagement`, `#clinical outcomes`, `#clustering`
+
+---
