@@ -17,6 +17,7 @@ import json
 
 SCORES = Path("/tmp/scores.json")
 SUMMARIES = ROOT / "data" / "summaries"
+POSTS = ROOT / "docs" / "_posts"
 ARCHIVE = ROOT / "data" / "summaries_archive"
 FRAGMENTS = ROOT / "data" / "fragments"
 SEEN = ROOT / "horizon_seen.json"
@@ -83,9 +84,17 @@ def _rebuild_today(date: str) -> None:
     parts_all = []
     for lang, title in (("zh", "心理学前沿日报"), ("en", "Psychology Frontiers Daily")):
         parts = sorted(FRAGMENTS.glob(f"{date}-batch*-{lang}.md"))
-        body = "\n".join(p.read_text(encoding="utf-8").strip() for p in parts)
+        body = "\n\n".join(p.read_text(encoding="utf-8").strip() for p in parts)
         doc = f"# {title} - {date}\n\n{body}\n"
         (SUMMARIES / f"horizon-{date}-{lang}.md").write_text(doc, encoding="utf-8")
+        # Jekyll source that the Pages workflow publishes.
+        POSTS.mkdir(parents=True, exist_ok=True)
+        front = (
+            "---\n"
+            f'layout: default\ntitle: "{"Horizon Summary"}: {date} ({"ZH" if lang == "zh" else "EN"})"\n'
+            f"date: {date}\nlang: {lang}\n---\n\n"
+        )
+        (POSTS / f"{date}-summary-{lang}.md").write_text(front + doc, encoding="utf-8")
         parts_all.extend(parts)
     return None
 

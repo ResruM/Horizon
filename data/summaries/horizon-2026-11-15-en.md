@@ -2,4 +2,4 @@
 
 ## Psychology Frontiers · this batch
 
-1. [Engagement phenotypes for a sample of 102,684 AI mental health chatbot (ash) users and dose-response associations with clinical outcomes](https://www.nature.com/articles/s41598-026-78802-w)
+1. [Broadband sensor-level EEG power dynamics differentiate anticipation, observation, imitation, and execution of hand actions](https://www.nature.com/articles/s41598-026-80276-9)
