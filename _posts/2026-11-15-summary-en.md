@@ -10,26 +10,25 @@ lang: en
 ---
 
 **Technology News**
-1. [Study of 102,684 Ash chatbot users finds five engagement phenotypes tied to symptom change](#item-tech-news-1) ⭐️ 7.0/10
+1. [Study maps five engagement types among 102,684 Ash chatbot users](#item-tech-news-1) ⭐️ 7.0/10
 
 ---
 
 ## Technology News
 
 <a id="item-tech-news-1"></a>
-### [Study of 102,684 Ash chatbot users finds five engagement phenotypes tied to symptom change](https://www.nature.com/articles/s41598-026-78802-w) ⭐️ 7.0/10
+### [Study maps five engagement types among 102,684 Ash chatbot users](https://www.nature.com/articles/s41598-026-78802-w) ⭐️ 7.0/10
 
-A study in Scientific Reports clustered 102,684 users of the Ash AI mental health chatbot across eight behavioral features and identified five engagement phenotypes: Early Dropouts \(52.2%\), Weekly Users \(25.3%\), a newly described Concentrated User pattern \(16.8%\), Intensive Users \(4.1%\), and Power Users \(1.6%\); 66.9% of users had at least one session between 9pm and 5am. In much smaller subsamples retested at three weeks, self-reported depression \(PHQ-9, n = 298; d = −0.51\), anxiety \(GAD-7, n = 298; d = −0.57\), and social support \(MSPSS, n = 194; d = 0.22\) improved from baseline. A dose-response gradient — largest improvements among Power \(d = −0.57\) and Intensive \(d = −0.50\) users, smallest among Early Dropouts \(d = −0.22\) — was replicated in a model-predicted PHQ-9 sample of 23,813, and higher baseline working alliance \(n = 11,437\) predicted depression improvement. The authors characterize the findings as naturalistic and correlational, pending confirmation in controlled designs, and several co-authors are employees of the company building the chatbot.
+A large observational study of 102,684 users of the AI mental health chatbot Ash used k-means clustering on eight behavioral features to identify five engagement phenotypes: Early Dropouts \(52.2%\), Weekly Users \(25.3%\), a new Concentrated User pattern \(16.8%\), Intensive Users \(4.1%\), and Power Users \(1.6%\); 66.9% had at least one session between 9 p.m. and 5 a.m. In smaller subsamples assessed at baseline and three weeks, pre-post scores improved for depression \(n = 298; d = -0.51\), anxiety \(n = 298; d = -0.57\), and social support \(n = 194; d = 0.22\). A dose-response gradient in depression improvement—largest for Power Users \(d = -0.57\) and Intensive Users \(d = -0.50\), smallest for Early Dropouts \(d = -0.22\)—was replicated using model-predicted PHQ-9 scores from 23,813 users. The authors describe the evidence as naturalistic and correlational, consistent with clinical benefit but pending confirmation in controlled designs.
 
 rss · Nature Psychology · Nov 15, 00:00
 
-**「Background」** Ash is a consumer AI therapist built by Slingshot AI, a mental health research lab developing a foundation model for psychology; the company markets Ash as purpose-built for emotional support rather than a general-purpose chatbot adapted to that task. Such purpose-built conversational agents are promoted as a way to extend mental health support beyond clinic capacity, but real-world engagement patterns and their relationship to clinical change have remained largely unmeasured.
+**「Background」** Ash is a purpose-built mental health chatbot from Slingshot AI, which describes it as its flagship product \(tool-2-1, tool-2-2\). The study analyzes real-world Ash users, and its disclosures state that several authors are employees of the company building the model and that Slingshot AI provided funding.
 
-**「Impact」** Because use sorted into qualitatively different patterns rather than a single intensity scale, the authors caution against treating session counts as a primary engagement metric: a frequent Concentrated User and a sparser Early Dropout can post similar totals while following different clinical trajectories. Teams evaluating mental health chatbots should report behavioral phenotype alongside symptom measures, and should treat these pre-post effect sizes as hypothesis-generating rather than as efficacy evidence, since the clinical subsamples \(n = 194–298\) were small and limited to self-selected users who returned for follow-up.
+**「Impact」** For chatbot developers and researchers, the findings caution against treating session counts as a primary engagement metric and indicate that engagement patterns and working alliance need separate measurement when clinical outcomes are evaluated.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://psychology.com/ai-therapy/ash">Ash App: AI Therapy Review, Cost and Privacy - psychology.com</a></li>
 <li><a href="https://slingshotai.com/">Slingshot AI</a></li>
 <li><a href="https://www.talktoash.com/">Ash - AI for Mental Health</a></li>
 
