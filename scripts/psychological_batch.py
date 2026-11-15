@@ -122,7 +122,7 @@ def finish(date: str) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("action", choices=["select", "finish"])
-    ap.add_argument("--limit", type=int, default=1)
+    ap.add_argument("--limit", type=int, default=3)
     ap.add_argument("--date", required=False)
     args = ap.parse_args()
     date = args.date or __import__("datetime").date.today().isoformat()

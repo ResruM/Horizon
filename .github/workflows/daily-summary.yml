@@ -4,7 +4,7 @@ on:
   schedule:
     # GitHub scheduled workflows use UTC. 20:00 UTC is 04:00 Asia/Shanghai;
     # this intentionally runs early to offset the observed schedule delay.
-    - cron: '0 1,5,9,13 * * *'   # 4 batches/day: 09:00, 13:00, 17:00, 21:00 Beijing
+    - cron: '0 23 * * *'   # 07:00 Beijing, once a day
   workflow_dispatch:      # Allow manual trigger
 
 jobs:
@@ -47,7 +47,7 @@ jobs:
         run: uv run horizon --hours 96
 
       - name: Publish new psychology item
-        run: uv run python scripts/psychological_batch.py select --limit 1
+        run: uv run python scripts/psychological_batch.py select --limit 3
 
       - name: Archive finished day
         run: uv run python scripts/psychological_batch.py finish
