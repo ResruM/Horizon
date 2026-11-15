@@ -148,7 +148,15 @@ class RSSScraper(BaseScraper):
         for ordinal, entry in enumerate(feed.entries, start=1):
             try:
                 published_at = self._parse_date(entry)
-                if not published_at or published_at < since:
+                if not published_at:
+                    # Some publishers (e.g. PNAS, Elsevier) ship entries with
+                    # no date field at all. Treat the fetch time as the
+                    # publication time so those entries are not silently
+                    # dropped; order within the feed still follows the feed.
+                    published_at = datetime.now(tz=timezone.utc).replace(
+                        microsecond=0
+                    )
+                if published_at < since:
                     continue
 
                 feed_id = str(source.url).split("//")[1].replace("/", "_")
@@ -216,6 +224,21 @@ class RSSScraper(BaseScraper):
                     if parsed_date.tzinfo is None:
                         parsed_date = parsed_date.replace(tzinfo=timezone.utc)
                     return parsed_date
+                except Exception:
+                    continue
+
+        # Metadata-only fallbacks used by some publishers (e.g. PNAS ships
+        # prism:coverdate / dc:date instead of a feed-level date).
+        for field in ["prism_coverdate", "dc_date"]:
+            raw = entry.get(field)
+            if raw:
+                try:
+                    parsed = datetime.fromisoformat(
+                        str(raw).strip().replace("Z", "+00:00")
+                    )
+                    if parsed.tzinfo is None:
+                        parsed = parsed.replace(tzinfo=timezone.utc)
+                    return parsed
                 except Exception:
                     continue
 
