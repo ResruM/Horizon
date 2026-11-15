@@ -5,53 +5,12 @@ date: 2026-11-15
 lang: zh
 ---
 
-> 从 39 条内容中筛选出 2 条重要资讯。
+# 心理学前沿日报 - 2026-11-15
 
----
+## 心理学前沿 · 本批
 
-**科技新闻**
-1. [Ash 研究识别五种用户参与类型并报告抑郁改善梯度](#item-tech-news-1) ⭐️ 7.0/10
-2. [AI 素养教学框架小样本实验：动机与 GPA 提升，但方法学存疑](#item-tech-news-2) ⭐️ 5.0/10
+1. [Broadband sensor-level EEG power dynamics differentiate anticipation, observation, imitation, and execution of hand actions](https://www.nature.com/articles/s41598-026-80276-9)
 
----
+## 心理学前沿 · 本批
 
-## 科技新闻
-
-<a id="item-tech-news-1"></a>
-### [Ash 研究识别五种用户参与类型并报告抑郁改善梯度](https://www.nature.com/articles/s41598-026-78802-w) ⭐️ 7.0/10
-
-一项针对 AI 心理健康聊天机器人 Ash 的观察性研究，用 8 项行为特征对 102,684 名用户做 K-means 聚类，识别出五种参与类型：早期流失者（52.2%）、每周用户（25.3%）、集中用户（16.8%）、密集用户（4.1%）和重度用户（1.6%）；66.9% 的用户至少有一次夜间（21:00—5:00）会话。完成基线和 3 周随访问卷的子样本较小（PHQ-9 和 GAD-7 各 n=298，社会支持 n=194），其抑郁、焦虑和社会支持均出现改善，效应量分别为 d=-0.51、-0.57 和 0.22；11,437 人完成基线工作联盟量表。抑郁改善的剂量反应梯度在基于模型预测 PHQ-9 的更大样本（n=23,813）中重现：重度用户 d=-0.57、密集用户 d=-0.50，早期流失者 d=-0.22。作者强调这是自然情境下的相关性证据，尚待对照设计确认，并提醒不应把会话次数当作主要参与度指标；论文还披露多名作者为构建该模型公司的雇员。
-
-rss · Nature Psychology · 11月15日 00:00
-
-**「背景」** Ash 是由心理健康研究机构 Slingshot AI 开发的一款心理对话机器人，支持文字与语音交流；据 2026 年 6 月的一篇第三方评测，它当时可免费下载使用，并计划引入订阅制。研究采用的“工作同盟量表”（WAI）原本用于心理治疗，衡量来访者与治疗师在情感联结、治疗目标与任务上的一致程度，这里被移植到人机对话场景，用来检验用户与聊天机器人的关系质量是否与症状变化相关。由于该研究是自然情境下的观察性设计，剂量-反应结果只能作为相关性证据，而非因果证明。
-
-**「实际影响」** 对临床和产品团队而言，仅看会话次数可能掩盖不同参与模式与不同结局之间的关系；评估 Ash 类工具时应同时观察参与类型、工作联盟和症状量表变化，并把 3 周小样本的改善视为待验证信号而非疗效证明。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://slingshotai.com/">Slingshot AI</a></li>
-<li><a href="https://www.talktoash.com/">Ash - AI for Mental Health</a></li>
-<li><a href="https://psychology.com/ai-therapy/ash">Ash App: AI Therapy Review, Cost and Privacy - psychology.com</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI mental health`, `#chatbot engagement`, `#clinical outcomes`, `#clustering`, `#digital health`
-
----
-
-<a id="item-tech-news-2"></a>
-### [AI 素养教学框架小样本实验：动机与 GPA 提升，但方法学存疑](https://www.nature.com/articles/s41598-026-79820-4) ⭐️ 5.0/10
-
-《Scientific Reports》发表的一项实验研究提出“动机—表现自适应 AI 素养优化框架”（MP-AILOF），将学习者画像、动机评估、学业表现监测与反馈式教学优化整合进本科 AI 素养教学。实证部分为单一大专院校的两组前后测设计：80 名本科生分为实验组与对照组各 40 人，实验组接受 MP-AILOF 支持的 AI 素养教学，对照组接受常规课堂教学，测量学业自我效能、学习动机与 GPA。配对样本 t 检验显示实验组三项指标均有统计学显著提升，协方差分析（ANCOVA）在控制基线分数后也显示实验组后测调整均值更高。但作者明确指出，这些仅是“现有样本中观察到的结果”，记录的 GPA 仍需按院校评分标准核验，分组分配程序未记录，所提 GBR 预测与自适应优化组件也未被独立验证，且缺乏追踪测量。
-
-rss · Nature Psychology · 11月15日 00:00
-
-**「背景」** 两组前后测设计通过比较实验组与对照组在干预前后的变化来判断教学干预效果，ANCOVA 则以基线分数为协变量调整后测比较，用以降低起始差异的影响。学业自我效能指学生对自己完成学习任务能力的信念，常与学习动机、成绩一并作为教学干预的结果指标。该研究正是用这套设计检验“AI 素养教学＋学习者指标驱动”的组合是否优于常规课堂讲授。
-
-**「影响」** 对打算借鉴该框架的教师与研究者而言，最直接的约束是证据边界：随文发布的实现包只复现描述性与推断性分析，不验证框架中的 GBR 预测和自适应优化环节，因此不能据此声称自适应决策本身有效。研究也未记录分组分配程序、未做追踪测评，GPA 数值尚待按院校评分标准核对；在把这些结果用于课程设计或政策论证前，需要经过核验的数据、明确的随机或分配记录、经验证的测量工具以及后续跟踪。
-
-**标签**: `#AI literacy`, `#higher education`, `#adaptive learning`, `#learning motivation`, `#experimental study`
-
----
+1. [Digital literacy and teaching innovative behavior among physical education teachers: a cross-sectional moderated mediation study](https://www.nature.com/articles/s41598-026-80414-3)
