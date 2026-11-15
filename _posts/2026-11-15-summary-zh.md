@@ -13,4 +13,6 @@ lang: zh
 
 ## 心理学前沿 · 本批
 
-1. [Self-motion perception influences postural sway more than environmental motion perception](https://www.nature.com/articles/s41598-026-80186-w)
+1. [The Kids May Not Be All Right, but They’re Getting Better](https://www.psychologicalscience.org/news/the-kids-may-not-be-all-right-but-theyre-getting-better.html)
+2. [Neurophysiological correlates of interoceptive compassion training for depression](https://www.nature.com/articles/s41598-026-78490-6)
+3. [College students’ perceived course usefulness and ease of engagement in an aesthetic education course in Shanxi, China](https://www.nature.com/articles/s41598-026-79298-0)
