@@ -63,3 +63,11 @@ logs/*.log
 todo.txt
 .ruff_cache
 .pytest_cache
+
+# psychology batches: keep generated digests + batch fragments
+!data/summaries/*.md
+!data/fragments/
+
+# psychology batches
+!data/summaries/*.md
+!data/fragments/
