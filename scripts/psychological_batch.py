@@ -120,6 +120,7 @@ def main() -> int:
     if args.action == "finish":
         finish(date)
         return 0
+    print(f"seen={len(load_seen())} scores={SCORES.exists()}", flush=True)
     batch = pick_batch(args.limit)
     if not batch:
         print("no unseen psychology items left in the window")
