@@ -13,4 +13,4 @@ lang: zh
 
 ## 心理学前沿 · 本批
 
-1. [Digital literacy and teaching innovative behavior among physical education teachers: a cross-sectional moderated mediation study](https://www.nature.com/articles/s41598-026-80414-3)
+1. [Self-motion perception influences postural sway more than environmental motion perception](https://www.nature.com/articles/s41598-026-80186-w)
