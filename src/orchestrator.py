@@ -61,6 +61,7 @@ def _export_scores(items) -> None:
             (item.metadata or {}).get("feed_name") or "",
             item.title or "",
             str(item.url),
+            (item.content or "")[:2000],
         ])
     try:
         _SCORES_PATH.write_text(json.dumps(rows, ensure_ascii=False), encoding="utf-8")

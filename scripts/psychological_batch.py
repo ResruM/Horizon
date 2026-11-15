@@ -42,14 +42,22 @@ def pick_batch(limit: int) -> list[dict]:
     rows = json.loads(SCORES.read_text(encoding="utf-8")) if SCORES.exists() else []
     seen = load_seen()
     ranked = []
-    for profile, score, source, title, url in rows:
+    for row in rows:
+        profile, score, source, title, url = row[:5]
+        excerpt = row[5] if len(row) > 5 else ""
         if norm(url) in seen:
             continue
         boost = 1.0 if any(name in (source or "") for name in BOOST_SOURCES) else 0.0
-        ranked.append((boost, score or 0, source or "", title, url))
+        ranked.append((boost, score or 0, source or "", title, url, excerpt))
     ranked.sort(key=lambda r: (r[0], r[1]), reverse=True)
     return [
-        {"source": r[2], "title": r[3], "url": r[4], "score": r[1]}
+        {
+            "source": r[2],
+            "title": r[3],
+            "url": r[4],
+            "score": r[1],
+            "content": r[5],
+        }
         for r in ranked[:limit]
     ]
 
@@ -67,6 +75,9 @@ def publish(batch: list[dict], date: str) -> None:
         (FRAGMENTS / f"{date}-batch{index}-{lang}.md").write_text(
             _render(batch, lang), encoding="utf-8"
         )
+    (FRAGMENTS / f"{date}-batch{index}.json").write_text(
+        json.dumps(batch, ensure_ascii=False, indent=1), encoding="utf-8"
+    )
     _rebuild_today(date)
     record(batch)
 

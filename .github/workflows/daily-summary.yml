@@ -49,6 +49,13 @@ jobs:
       - name: Publish new psychology item
         run: uv run python scripts/psychological_batch.py select --limit 3
 
+      - name: Write Chinese digest with summaries
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          cp data/config.github.json data/config.json
+          uv run python scripts/psych_digest.py
+
       - name: Archive finished day
         run: uv run python scripts/psychological_batch.py finish
 
