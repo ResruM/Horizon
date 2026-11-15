@@ -136,7 +136,12 @@ def main() -> int:
     ap.add_argument("--limit", type=int, default=3)
     ap.add_argument("--date", required=False)
     args = ap.parse_args()
-    date = args.date or __import__("datetime").date.today().isoformat()
+    if args.date:
+        date = args.date
+    else:
+        # Digests are dated by Beijing time, not the runner's UTC clock.
+        from datetime import datetime as _dt, timedelta as _td, timezone as _tz
+        date = _dt.now(_tz(_td(hours=8))).date().isoformat()
     if args.action == "finish":
         finish(date)
         return 0
