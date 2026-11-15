@@ -19,7 +19,7 @@
     "default_profile": "tech-news",
     "profile_settings": {
       "tech-news": {
-        "threshold": 7.0,
+        "threshold": 5.5,
         "topic_dedup": true
       },
       "tech-blog": {
@@ -47,7 +47,22 @@
         "enabled": true,
         "category": "psychology",
         "profile": "tech-news",
-        "fetch_limit": 8
+        "fetch_limit": 12
+      },
+      {
+        "name": "PNAS",
+        "url": "https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=pnas",
+        "enabled": true,
+        "category": "psychology-research",
+        "profile": "tech-news",
+        "content_extractor": "trafilatura"
+      },
+      {
+        "name": "ScienceDaily Psychology",
+        "url": "https://www.sciencedaily.com/rss/mind_brain/psychology.xml",
+        "enabled": true,
+        "category": "psychology",
+        "profile": "tech-news"
       },
       {
         "name": "Mind Hacks",
@@ -144,7 +159,7 @@
     "time_window_hours": 24
   },
   "digest": {
-    "max_items": 12,
+    "max_items": 3,
     "profile_order": [
       "tech-news",
       "tech-blog",
