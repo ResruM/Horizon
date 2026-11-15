@@ -4,7 +4,7 @@ on:
   schedule:
     # GitHub scheduled workflows use UTC. 20:00 UTC is 04:00 Asia/Shanghai;
     # this intentionally runs early to offset the observed schedule delay.
-    - cron: '0 23 * * *'
+    - cron: '0 1,5,9,13 * * *'   # 4 batches/day: 09:00, 13:00, 17:00, 21:00 Beijing
   workflow_dispatch:      # Allow manual trigger
 
 jobs:
@@ -43,7 +43,15 @@ jobs:
           LWN_KEY: ${{ secrets.LWN_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          HORIZON_DEBUG_SCORES: "1"
         run: uv run horizon --hours 96
+
+      - name: Publish new psychology item
+        run: uv run python scripts/psychological_batch.py select --limit 1
+
+      - name: Archive finished day
+        run: uv run python scripts/psychological_batch.py finish
 
       - name: Set current date as environment variable
         run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
@@ -54,6 +62,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
           keep_files: true  # Keep existing summaries on gh-pages branch
-          commit_message: "📝 Daily Summary: ${{ env.DATE }}"
+          commit_message: "📝 Summary batch: ${{ env.DATE }} ${{ github.run_number }}"
           publish_branch: gh-pages
           enable_jekyll: true

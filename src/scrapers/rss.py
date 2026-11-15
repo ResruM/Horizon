@@ -145,7 +145,11 @@ class RSSScraper(BaseScraper):
         ):
             raise ValueError("Invalid RSS/Atom feed")
 
-        for ordinal, entry in enumerate(feed.entries, start=1):
+        entries = feed.entries
+        if source.max_items is not None and source.max_items > 0:
+            entries = entries[: source.max_items]
+
+        for ordinal, entry in enumerate(entries, start=1):
             try:
                 published_at = self._parse_date(entry)
                 if not published_at:

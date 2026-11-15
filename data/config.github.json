@@ -19,7 +19,7 @@
     "default_profile": "tech-news",
     "profile_settings": {
       "tech-news": {
-        "threshold": 5.5,
+        "threshold": 4.5,
         "topic_dedup": true
       },
       "tech-blog": {
@@ -47,7 +47,8 @@
         "enabled": true,
         "category": "psychology",
         "profile": "tech-news",
-        "fetch_limit": 12
+        "fetch_limit": 12,
+        "max_items": 10
       },
       {
         "name": "PNAS",
@@ -55,14 +56,16 @@
         "enabled": true,
         "category": "psychology-research",
         "profile": "tech-news",
-        "content_extractor": "trafilatura"
+        "content_extractor": "trafilatura",
+        "max_items": 15
       },
       {
         "name": "ScienceDaily Psychology",
         "url": "https://www.sciencedaily.com/rss/mind_brain/psychology.xml",
         "enabled": true,
         "category": "psychology",
-        "profile": "tech-news"
+        "profile": "tech-news",
+        "max_items": 6
       },
       {
         "name": "Mind Hacks",
@@ -80,7 +83,8 @@
         "category": "psychology",
         "profile": "tech-news",
         "content_extractor": "trafilatura",
-        "fetch_limit": 6
+        "fetch_limit": 6,
+        "max_items": 6
       },
       {
         "name": "Nature Psychology",
@@ -89,7 +93,8 @@
         "category": "psychology-research",
         "profile": "tech-news",
         "content_extractor": "trafilatura",
-        "fetch_limit": 12
+        "fetch_limit": 12,
+        "max_items": 15
       },
       {
         "name": "npj Science of Learning",
@@ -98,7 +103,8 @@
         "category": "psychology-research",
         "profile": "tech-blog",
         "content_extractor": "trafilatura",
-        "fetch_limit": 6
+        "fetch_limit": 6,
+        "max_items": 6
       },
       {
         "name": "ScienceDaily Mind & Brain",
@@ -106,7 +112,8 @@
         "enabled": true,
         "category": "psychology",
         "profile": "tech-news",
-        "fetch_limit": 10
+        "fetch_limit": 10,
+        "max_items": 6
       },
       {
         "name": "Biological Psychology (Elsevier)",
@@ -114,7 +121,8 @@
         "enabled": true,
         "category": "psychology-research",
         "profile": "tech-news",
-        "fetch_limit": 8
+        "fetch_limit": 8,
+        "max_items": 8
       },
       {
         "name": "Aeon",

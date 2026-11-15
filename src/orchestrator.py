@@ -1,6 +1,8 @@
 """Main orchestrator coordinating the entire workflow."""
 
 import asyncio
+import json
+import os
 from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
@@ -38,6 +40,32 @@ from .ai.tokens import get_usage_snapshot
 from .processing import ProfileRegistry
 from .processing.content import COMMENTS_MARKER, split_content
 from .processing.tools import ToolRegistry
+
+
+_SCORES_PATH = Path("/tmp/scores.json")
+
+
+def _export_scores(items) -> None:
+    """Expose ranked candidates for the psychology batch publisher.
+
+    Only active when HORIZON_DEBUG_SCORES is set; a no-op otherwise.
+    """
+    if not os.getenv("HORIZON_DEBUG_SCORES"):
+        return
+    rows = []
+    for item in items:
+        proc = item.processing
+        rows.append([
+            proc.classification.profile if proc and proc.classification else None,
+            proc.analysis.score if proc and proc.analysis else None,
+            (item.metadata or {}).get("feed_name") or "",
+            item.title or "",
+            str(item.url),
+        ])
+    try:
+        _SCORES_PATH.write_text(json.dumps(rows, ensure_ascii=False), encoding="utf-8")
+    except OSError:
+        pass
 
 
 _TRACKING_QUERY_PARAMETERS = {
@@ -785,6 +813,7 @@ class HorizonOrchestrator:
         log: bool = True,
     ) -> FilteringPipelineResult:
         """Apply score thresholding, optional topic dedup, and digest balancing."""
+        _export_scores(items)
         threshold_items = []
         for item in items:
             if self.passes_profile_filter(item, threshold):
@@ -885,7 +914,7 @@ class HorizonOrchestrator:
                 if item.processing
                 and item.processing.analysis
                 and item.processing.analysis.score is not None
-                else -1
+                else -1,
             ),
             reverse=True,
         )
