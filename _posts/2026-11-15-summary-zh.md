@@ -10,31 +10,32 @@ lang: zh
 ---
 
 **科技新闻**
-1. [10 万 Ash 用户研究识别五种参与模式](#item-tech-news-1) ⭐️ 7.0/10
+1. [10 万用户 AI 心理聊天机器人 Ash 的参与类型与临床关联](#item-tech-news-1) ⭐️ 7.0/10
 
 ---
 
 ## 科技新闻
 
 <a id="item-tech-news-1"></a>
-### [10 万 Ash 用户研究识别五种参与模式](https://www.nature.com/articles/s41598-026-78802-w) ⭐️ 7.0/10
+### [10 万用户 AI 心理聊天机器人 Ash 的参与类型与临床关联](https://www.nature.com/articles/s41598-026-78802-w) ⭐️ 7.0/10
 
-一项发表于《Scientific Reports》的观察性研究对 102,684 名 AI 心理健康聊天机器人 Ash 用户的行为数据做 K-means 聚类，识别出五种参与模式：早期流失者（52.2%）、强力用户（1.6%）、高强度用户（4.1%）、每周用户（25.3%），以及新提出的“集中使用型”（16.8%）；66.9%的用户至少有过一次夜间（21 时至次日 5 时）会话。在完成基线与 3 周随访问卷的子样本中，抑郁（PHQ-9，n=298，d=-0.51）、焦虑（GAD-7，n=298，d=-0.57）和社会支持（MSPSS，n=194，d=0.22）均出现显著改善，且抑郁改善呈现剂量-反应梯度，并在使用模型预测 PHQ-9 的更大样本（n=23,813）中重现：强力用户和高强度用户改善最大（d 分别为-0.57 和-0.50），早期流失者最小（d=-0.22）。作者强调这是自然状态下的相关性证据，需对照设计确认；论文并未给出因果结论。
+一项发表于《Scientific Reports》的观察性研究对 102,684 名 AI 心理健康聊天机器人 Ash 用户按 8 个行为特征做 k-means 聚类，识别出五种参与类型：早期流失者占 52.2%、每周用户占 25.3%、集中使用者占 16.8%、高强度用户占 4.1%、Power 用户占 1.6%；66.9%的用户至少有一次夜间（21 时至次日 5 时）会话。完成基线和 3 周随访问卷的子样本中，PHQ-9 和 GAD-7 各 n=298、MSPSS n=194，抑郁、焦虑和社会支持均出现前后改善（d=-0.51、-0.57、0.22），另有 11,437 人完成基线工作同盟量表。研究者称，在 n=23,813 的模型预测 PHQ-9 样本中复现了剂量反应梯度：Power 和高强度用户改善最大（d=-0.57 和-0.50），早期流失者最小（d=-0.22）。该研究为无控制组的前后观察，作者提醒不应把会话次数当作主要参与指标，临床获益仍需对照设计确认；部分作者为 Ash 开发公司雇员。
 
 rss · Nature Psychology · 11月15日 00:00
 
-**「背景」** Ash 是 Slingshot AI 开发的心理健康专用对话式 AI，公开介绍将其定位为可就压力、焦虑和人际关系等问题即时提供支持的自助工具。论文指出，这类工具在真实世界中的使用方式及其与临床结局的关系仍缺乏大规模描述，因此研究先用行为特征对 102,684 名用户聚类，再在完成量表的小样本中观察抑郁、焦虑和社会支持的变化。
+**「背景」** Ash 由 Slingshot AI 开发；该公司自称是一家构建心理学基础模型的心理健康研究实验室，Ash 则被定位为专为心理健康设计的 AI 聊天工具。Tech Brew 在 2025 年 7 月 31 日报道，Slingshot AI 已融资 9300 万美元，押注在防护措施到位的前提下，类 ChatGPT 工具可以提供心理健康服务。
 
-**「实践含义」** 研究提示不应把会话次数当作主要参与度指标，因为不同临床结局与不同维度的使用行为相关；同时，11,437 名完成基线工作联盟量表（WAI）的用户数据显示，较高的工作联盟可预测抑郁改善，并调节参与度与社会支持之间的关系。对开发者而言，这意味着评估聊天机器人效果时需要区分使用模式并测量治疗联盟，而不能仅以使用量作为效果代理。
+**「影响」** 对开发者和评估者而言，这项研究的具体含义是：参与度不能只用会话次数衡量，因为不同临床结局与不同使用维度相关；在缺乏对照组的情况下，当前结果只能支持“参与度与改善相关”的假设，不能作为产品疗效证据。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://slingshotai.com/">Slingshot AI</a></li>
 <li><a href="https://www.talktoash.com/">Ash - AI for Mental Health</a></li>
+<li><a href="https://slingshotai.com/">Slingshot AI</a></li>
+<li><a href="https://www.techbrew.com/stories/2025/07/31/slingshot-ai-therapy-chatbot-a16z">Slingshot AI &#x27;s Ash wants to be your therapist</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI mental health`, `#conversational agents`, `#user engagement`, `#clinical outcomes`, `#observational study`
+**标签**: `#AI mental health`, `#conversational AI`, `#user engagement`, `#clinical outcomes`, `#k-means clustering`
 
 ---
