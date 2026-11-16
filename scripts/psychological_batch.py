@@ -117,11 +117,12 @@ def record(batch: list[dict]) -> None:
 
 
 def finish(date: str) -> None:
-    """Refresh today's page and keep a copy in the archive."""
+    """Archive today's digest (already written) without rewriting it."""
     ARCHIVE.mkdir(parents=True, exist_ok=True)
-    if not list(FRAGMENTS.glob(f"{date}-batch*-zh.md")):
+    if not list(FRAGMENTS.glob(f"{date}-batch*-zh.md")) and not (
+        SUMMARIES / f"horizon-{date}-zh.md"
+    ).exists():
         return
-    _rebuild_today(date)
     for lang in ("zh", "en"):
         src = SUMMARIES / f"horizon-{date}-{lang}.md"
         if src.exists():
