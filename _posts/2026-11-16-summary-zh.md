@@ -1,14 +1,42 @@
 ---
 layout: default
-title: "Horizon Summary: 2026-11-16 (ZH)"
+title: "心理学前沿日报 2026-11-16"
 date: 2026-11-16
 lang: zh
 ---
 
 # 心理学前沿日报 - 2026-11-16
 
-## 心理学前沿 · 本批
+> 今日 3 条，均为此前未推送过的心理学/神经科学新研究。
 
-1. [The Kids May Not Be All Right, but They’re Getting Better](https://www.psychologicalscience.org/news/the-kids-may-not-be-all-right-but-theyre-getting-better.html)
-2. [More choices improve behavioral risk measures but surveys remain more reliable](https://www.nature.com/articles/s41598-026-79718-1)
-3. [Digital literacy and teaching innovative behavior among physical education teachers: a cross-sectional moderated mediation study](https://www.nature.com/articles/s41598-026-80414-3)
+---
+
+## 1. VR中自我运动知觉比环境运动更敏感
+
+[原文](https://www.nature.com/articles/s41598-026-80186-w) · Nature Psychology
+
+研究让健康成人（约19人）双脚并拢、戴VR头显站立，视觉呈现绕踝轴的虚拟正弦俯仰旋转，并用自适应阶梯法分别在随机区组中判断“房间是否移动”或“自身摇摆是否增加”。以心理测量曲线求主观相等点：房间运动的PSE为0.42度，显著低于自身摇摆的2.02度（t=4.47，p=0.00029）。头摆面积仅在受试者觉知自身摇摆增加时，于刺激中（z=11.53）和刺激后（z=5.09）显著增大。提示姿势反应依赖知觉任务而非单纯视觉输入，样本量较小需谨慎推广。
+
+**为什么值得看**：把“视觉诱发晕动/姿势控制”从刺激量转为知觉判断来测量，为VR晕动与平衡研究提供了新的因变量设计思路。
+
+---
+
+## 2. 美国青少年心理健康的走势被误读
+
+[原文](https://www.psychologicalscience.org/news/the-kids-may-not-be-all-right-but-theyre-getting-better.html) · Association for Psychological Science
+
+这是一篇评论而非实证论文，作者援引美国CDC青少年风险行为调查（YRBS）与药物滥用及心理健康服务署的全国药物使用与健康调查（NSDUH）等常规监测指标，主张近五年美国青少年心理健康并非持续恶化，而是在稳步改善，并指出“智能手机致害”假说（Haidt、Twenge）与这些趋势并不同步。文章未给出具体统计量，论证以趋势解读为主，属对主流“危机叙事”的质疑，尚需原始数据核验。
+
+**为什么值得看**：提醒读者警惕被媒体放大的“青少年危机”叙事，读文献时应回到原始监测数据而非二手结论。
+
+---
+
+## 3. 增加试次可提升风险偏好任务信度
+
+[原文](https://www.nature.com/articles/s41598-026-79718-1) · Nature Psychology
+
+研究关注行为风险偏好 elicitation 任务重测信度偏低的问题，假设在任务中增加决策条目可降低决策噪声、提高重测信度。作者将改良的多条目行为风险任务与标准行为测量、成熟的多条目自陈量表相比较，结果显示：增加决策数量确实使信度优于传统行为任务，但成熟的多条目自陈心理问卷的重测一致性仍然更高。摘要未报告样本量与具体信度系数，结论支持“行为任务与自陈量表互补而非替代”的谨慎解读。
+
+**为什么值得看**：做风险偏好或行为经济学测量的人可直接参考：多用试次能救行为任务，但仍难超越自陈量表。
+
+---

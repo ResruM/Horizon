@@ -9,6 +9,6 @@ lang: en
 
 ## Psychology Frontiers · this batch
 
-1. [The Kids May Not Be All Right, but They’re Getting Better](https://www.psychologicalscience.org/news/the-kids-may-not-be-all-right-but-theyre-getting-better.html)
-2. [More choices improve behavioral risk measures but surveys remain more reliable](https://www.nature.com/articles/s41598-026-79718-1)
-3. [Digital literacy and teaching innovative behavior among physical education teachers: a cross-sectional moderated mediation study](https://www.nature.com/articles/s41598-026-80414-3)
+1. [Self-motion perception influences postural sway more than environmental motion perception](https://www.nature.com/articles/s41598-026-80186-w)
+2. [The Kids May Not Be All Right, but They’re Getting Better](https://www.psychologicalscience.org/news/the-kids-may-not-be-all-right-but-theyre-getting-better.html)
+3. [More choices improve behavioral risk measures but surveys remain more reliable](https://www.nature.com/articles/s41598-026-79718-1)
