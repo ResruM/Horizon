@@ -4,7 +4,9 @@ on:
   schedule:
     # GitHub scheduled workflows use UTC. 20:00 UTC is 04:00 Asia/Shanghai;
     # this intentionally runs early to offset the observed schedule delay.
-    - cron: '0 23 * * *'   # 07:00 Beijing, once a day
+    - cron: '0 23 * * *'    # 07:00 Beijing — main run
+    - cron: '30 0 * * *'    # 08:30 Beijing — watchdog (skips if today's digest exists)
+    - cron: '30 2 * * *'    # 10:30 Beijing — watchdog (skips if today's digest exists)
   workflow_dispatch:      # Allow manual trigger
 
 jobs:
@@ -33,7 +35,20 @@ jobs:
       - name: Prepare GitHub Actions config
         run: cp data/config.github.json data/config.json
 
+      - name: Check whether today's digest already exists
+        id: gate
+        run: |
+          DATE=$(TZ=Asia/Shanghai date +%F)
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          if [ -f "data/summaries/horizon-$DATE-zh.md" ] && [ -f "docs/_posts/$DATE-summary-zh.md" ]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "Today's digest ($DATE) already exists — skipping this run."
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Run Horizon
+        if: steps.gate.outputs.exists == 'false'
         env:
           # Map secrets to environment variables expected by config.json
           # Modify these based on your data/config.github.json provider settings
@@ -47,9 +62,11 @@ jobs:
         run: uv run horizon --hours 96
 
       - name: Publish new psychology item
+        if: steps.gate.outputs.exists == 'false'
         run: uv run python scripts/psychological_batch.py select --limit 3
 
       - name: Write Chinese digest with summaries
+        if: steps.gate.outputs.exists == 'false'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
@@ -57,12 +74,14 @@ jobs:
           uv run python scripts/psych_digest.py
 
       - name: Archive finished day
+        if: steps.gate.outputs.exists == 'false'
         run: uv run python scripts/psychological_batch.py finish
 
       - name: Set current date as environment variable
-        run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+        run: echo "DATE=${{ steps.gate.outputs.date }}" >> $GITHUB_ENV
 
       - name: Deploy to GitHub Pages
+        if: steps.gate.outputs.exists == 'false'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
