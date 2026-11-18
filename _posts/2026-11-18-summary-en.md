@@ -10,5 +10,5 @@ lang: en
 ## Psychology Frontiers · this batch
 
 1. [Public opinion surveys with large language models: methodological opportunities and validity risks](https://www.nature.com/articles/s41599-026-09593-8)
-2. [Dynamic attention-based multimodal fusion for audience emotion analysis in interactive media](https://www.nature.com/articles/s41598-026-80681-0)
-3. [Longitudinal prediction of youth depression using multivariable machine learning](https://www.nature.com/articles/s44184-026-00257-8)
+2. [Artists Have an Intuitive Sense for What Is Memorable](https://www.psychologicalscience.org/news/2026-nov-artists-memorable.html)
+3. [Dynamic attention-based multimodal fusion for audience emotion analysis in interactive media](https://www.nature.com/articles/s41598-026-80681-0)
