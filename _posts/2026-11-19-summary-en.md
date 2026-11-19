@@ -9,6 +9,6 @@ lang: en
 
 ## Psychology Frontiers · this batch
 
-1. [Physician AI disclosure, condition severity, and public trust in digital medicine](https://www.nature.com/articles/s41746-026-03484-7)
-2. [Mental health sentiment analysis on social media using a fine-tuned BERT–GRU framework](https://www.nature.com/articles/s41598-026-75415-1)
-3. [Artists Have an Intuitive Sense for What Is Memorable](https://www.psychologicalscience.org/news/2026-nov-artists-memorable.html)
+1. [Artists Have an Intuitive Sense for What Is Memorable](https://www.psychologicalscience.org/news/2026-nov-artists-memorable.html)
+2. [In This Issue](https://www.pnas.org/doi/abs/10.1073/iti4626123?af=R)
+3. [New wearable ultrasound patch boosts REM sleep without drugs or surgery](https://www.sciencedaily.com/releases/2026/11/261116014842.htm)
