@@ -9,6 +9,6 @@ lang: en
 
 ## Psychology Frontiers · this batch
 
-1. [Artists Have an Intuitive Sense for What Is Memorable](https://www.psychologicalscience.org/news/2026-nov-artists-memorable.html)
-2. [Teaching: Does It Benefit Us to Be Intellectually Humble?](https://www.psychologicalscience.org/publications/observer/teaching-current-directions-intellectually-humble.html)
-3. [In This Issue](https://www.pnas.org/doi/abs/10.1073/iti4626123?af=R)
+1. [Physician AI disclosure, condition severity, and public trust in digital medicine](https://www.nature.com/articles/s41746-026-03484-7)
+2. [Artists Have an Intuitive Sense for What Is Memorable](https://www.psychologicalscience.org/news/2026-nov-artists-memorable.html)
+3. [Cognitive and attitudinal correlates of trust in AI-generated content among university students in Türkiye](https://www.nature.com/articles/s41598-026-78416-2)
