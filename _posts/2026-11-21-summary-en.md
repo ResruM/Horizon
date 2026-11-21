@@ -9,6 +9,6 @@ lang: en
 
 ## Psychology Frontiers · this batch
 
-1. [Behavioural responses to simulated phishing across organizational roles in higher education](https://www.nature.com/articles/s41598-026-80362-y)
-2. [Mapping citizen-sourced urban perceptions to guide health-directed interventions](https://www.nature.com/articles/s41598-026-81152-2)
-3. [Artists Have an Intuitive Sense for What Is Memorable](https://www.psychologicalscience.org/news/2026-nov-artists-memorable.html)
+1. [Artists Have an Intuitive Sense for What Is Memorable](https://www.psychologicalscience.org/news/2026-nov-artists-memorable.html)
+2. [Marsha Linehan Has Died. She Transformed Treatment for Personality Disorder.](https://www.psychologicalscience.org/news/marsha-linehan-has-died-she-transformed-treatment-for-personality-disorder.html)
+3. [Teaching: Does It Benefit Us to Be Intellectually Humble?](https://www.psychologicalscience.org/publications/observer/teaching-current-directions-intellectually-humble.html)
