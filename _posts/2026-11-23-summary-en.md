@@ -9,6 +9,6 @@ lang: en
 
 ## Psychology Frontiers · this batch
 
-1. [LENS: localized updates facilitate patient-level unlearning in clinical large language models](https://www.nature.com/articles/s41598-026-80817-2)
-2. [Multimodal emotion recognition and feedback adaptation for personalized music therapy](https://www.nature.com/articles/s41598-026-77374-z)
-3. [Exploring relationships between attitudes toward reducing mental illness stigma and help-seeking on a major Taiwanese online discussion forum: a machine learning approach](https://www.nature.com/articles/s41598-026-82038-z)
+1. [Marsha Linehan Has Died. She Transformed Treatment for Personality Disorder.](https://www.psychologicalscience.org/news/marsha-linehan-has-died-she-transformed-treatment-for-personality-disorder.html)
+2. [Teaching: Does It Benefit Us to Be Intellectually Humble?](https://www.psychologicalscience.org/publications/observer/teaching-current-directions-intellectually-humble.html)
+3. [AI may not work like the human brain after all, scientists discover](https://www.sciencedaily.com/releases/2026/11/261120075701.htm)
