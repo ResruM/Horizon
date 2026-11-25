@@ -9,6 +9,6 @@ lang: en
 
 ## Psychology Frontiers · this batch
 
-1. [Museum-grounded auditing reveals systematic form failures in AI-generated Chinese lacquerware](https://www.nature.com/articles/s41598-026-81768-4)
-2. [Interpretable dimensions of visual aesthetics reveal robust coupling but weak prediction of human ratings](https://www.nature.com/articles/s41598-026-81580-0)
-3. [Detecting multimodal sarcasm through temporal emotion drift modelling](https://www.nature.com/articles/s41598-026-80393-5)
+1. [Academic Writing Is Shifting in the Age of AI](https://www.psychologicalscience.org/publications/observer/academic-writing-ai.html)
+2. [What Can Future Workers Expect From Their AI Colleagues?](https://www.psychologicalscience.org/publications/observer/future-workers-ai-colleagues.html)
+3. [In This Issue](https://www.pnas.org/doi/abs/10.1073/iti4726123?af=R)
